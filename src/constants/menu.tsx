@@ -1,22 +1,20 @@
-import {
-    AutomationDuoToneWhite,
-    HomeDuoToneWhite,
-    RocketDuoToneWhite,
-    SettingsDuoToneWhite,
-  } from '../icons'
+import { AutomationDuoToneWhite } from '@/icons/automation-duo-tone-white'
+import { HomeDuoToneWhite } from '@/icons/home-duo'
+import { RocketDuoToneWhite } from '@/icons/rocket-duo'
 
-  import { v4 as uuid } from 'uuid'
+import { SettingsDuoToneWhite } from '@/icons/setting-duo'
+import { v4 as uuid } from 'uuid'
   
-  export type FieldProps = {
+export type FieldProps = {
     label: string
     id: string
-  }
+}
   
-  type SideBarProps = {
+type SideBarProps = {
     icon: React.ReactNode
-  } & FieldProps
+} & FieldProps
   
-  export const SIDEBAR_MENU: SideBarProps[] = [
+export const SIDEBAR_MENU: SideBarProps[] = [
     {
       id: uuid(),
       label: 'home',
@@ -37,4 +35,4 @@ import {
       label: 'settings',
       icon: <SettingsDuoToneWhite />,
     },
-  ]
+]
