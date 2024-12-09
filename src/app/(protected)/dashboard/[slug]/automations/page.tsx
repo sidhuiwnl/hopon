@@ -1,5 +1,8 @@
+"use client";
+
 import AutomationList from "@/components/global/automation-list";
-import CreateAutomation from "@/components/global/create-automation-btn";
+import CreateAutomation from "@/components/global/create-automation";
+
 import { Check } from "lucide-react";
 import React from "react";
 
